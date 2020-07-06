@@ -1,2 +1,2 @@
 # C-language-learning
- Exercícios que fiz para aprender C
+ Exercícios que fiz para aprendiz
