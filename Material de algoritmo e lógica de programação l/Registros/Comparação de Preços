@@ -1,0 +1,27 @@
+Algoitmo CompararPreco
+ Tipo
+   Produto=registro
+     nome:Vetor [1..20]
+     preco:real
+ Fim_Resgistro
+Var
+  Produtos:Vetor[0..1] de produto
+  i:inteiro  
+Inicio
+  Para i de 0 ate 1 passo 1 faca
+    Escreval("Digite o nome do produto: ")
+      Leia(Produtos.Nome)
+    Escreval("Digite o valor do produto: ")	
+      Leia(Produtos.preco)
+  Fim_para
+  Se Produtos[0].Preco > Produtos[1].Preco entao
+    Escreval("O ",Produtos[0].nome," é mais caro")
+  Senao
+    Se Produtos[1].Preco > Produtos[0].Preco entao
+	  Escreval("O ",Produtos[1].nome," é mais caro")
+	senao
+	  Escreval("Os produtos tem o mesmo preço")
+	Fim_se
+  Fim_se  
+ Leia() 	  
+Fim  

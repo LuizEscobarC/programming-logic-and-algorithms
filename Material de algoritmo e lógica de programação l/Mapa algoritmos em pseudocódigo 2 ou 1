@@ -1,0 +1,43 @@
+//Nome : Luiz Paulo
+//Alp1
+//Mediador corretor: ?
+// A inovação distingue um líder de um seguidor
+//                                         Steve Jobs
+
+Algoritmo DoisouUm
+  funcao Verificar(x:inteiro):inteiro
+  Inicio
+    Enquanto ( x <> 1 ) e ( x <> 2 ) faca
+      Escreval("Digite novamente, pois só é perimitido 2 ou 1")
+	   leia(x)
+    Fim_Enquanto
+  Retorne x
+fim_funcao
+Var
+  A, C, P: inteiro
+inicio
+  Escreval("André digite 2 ou 1 --: ")
+  leia( A )
+  A <- Verificar( A )
+  Escreval("Carlos digite 2 ou 1 -: ")
+  leia(C)
+  C <- Verificar( C )
+  Escreva("Pietro digite 2 ou 1 -: ")
+  leia(P)
+  P <- Verificar( P )
+  escreval(" ")
+  escreva("-- Resultado ->> ")
+  Se( A <> C ) e ( A <> P ) entao
+    Escreval("A")
+  Senao
+    Se( C <> A ) e ( C <> P ) entao
+      Escreval("C")
+    Senao
+      Se( P <> A ) e ( P <> C ) entao
+        Escreval("P")
+      Senao
+        Escreval("X")
+      Fim_se
+    Fim_se
+  Fim_se
+fim

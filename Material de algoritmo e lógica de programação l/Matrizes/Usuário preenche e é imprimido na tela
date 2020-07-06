@@ -1,0 +1,18 @@
+Algoritmo imprimeMat
+Var Mat: Vetor [1..3, 1..3] de inteiro
+    i, j:inteiro
+Inicio
+    Para i de 1 ate 3 faça
+      Para j de 1 ate 3 faça
+	    Escreval("Digite o valor da linha ",i," coluna ", j" da matriz bidimensional 3X3: ")
+	    Leia(Mat[i,j])
+	  Fim_para
+    Fim_para
+	
+  Para i de 1 ate 3 faça  
+    Para j de 1 ate 3 faça	
+      Escreval(Mat[i,j])  //Necessáio a recontagem para colocar a matriz corretamente na tela
+    Fim_para
+  Fim_para  
+ Leia()  // para o algoritmo nao finalizar na hora que acabar após Para 
+Fim	

@@ -1,0 +1,43 @@
+4. Crie um programa que armazene 10 números digitados pelo usuário
+ em dois vetores: um somente para números pares, e outro somente para números ímpares.
+Após, exiba os valores dos dois vetores na tela, em sequência.
+ 
+algoritmo ImparPar
+  Var
+    VetP: Vetor[1..10] de inteiro
+	VetI: Vetor[1..10] de inteiro
+	i, Numero: inteiro
+	
+Inicio
+  Enquanto i <= 10 faca
+    Escreval("Digite um nmr: ")
+	Leia(numero)
+	
+	  Se numero = 0 então
+	    Escreval("Numero 0 não é aceito: digite denovo")
+		Leia(numero)
+	  Fim_se
+	  
+	  Se (Numero mod 2 = 0) entao
+	    VetP[i] <- Numero
+	  Senao
+	    Se (Numero mod 2 = 1) entao
+	      VetI[i] <- Numero
+	  Fim_se
+    	
+  Fim_enquanto
+  
+  Para i de 1 ate 10 passo 1 faca
+    Se (VetP[i] <> 0) entao
+        Escreval("Os valores do Vetor par são: ",VetP[i])
+	fim_se
+	
+    Se (VetI[i] <> 0) entao
+        Escreval("Os valores do Vetor Impar são: ",VetI[i])
+	fim_se
+  Fim_para   
+  Leia()  
+Fim
+
+By Hammer Escostar
+  

@@ -1,0 +1,71 @@
+Algoritmo PrecoCar
+ Tipo
+   Carro = registro
+     Modelo: caractere
+     Ano: inteiro
+     Qopcionais:inteiro
+ Fim_Registro
+Var
+  Carros:carro
+  i:inteiro
+  V1,V2,V3,V4,V5: Real
+  Continuar:inteiro
+  
+Inicio
+V1 <- 0
+V2 <- 0
+V3 <- 0
+V4 <- 0
+V5 <- 0
+Continuar <- 1
+ 
+ Enquanto Continuar = 1 faca
+ 
+  i<-i+1
+  
+  Escreval(" 1 - Hatche      ")
+  Escreval(" 2 - Sedã        ")
+  Escreval(" 3 - Picape      ")
+  Escreval(" 4 - Esportivo   ")
+  Escreval(" 5 - Conversível ")
+  
+  Escreval("Qual o Modelo do carro? ")
+    Leia(Carros.Modelo)
+  Escreval("Qual o ano do carro? ")
+    Leia(Carros.Ano)
+  Escreval("Quantos adicionais vai querer? Exemplo:  4 ")
+    Leia(Carros.Qopcionais)
+	
+  Se Carros.Modelo = "Hatche" entao
+    V1 <- (20000+200*Carros.Qopcionais)* Carros.ano/2017 
+    Escreval("O valor é: R$", V1)
+  Senao
+    Se Carros.Modelo = "Sedã" entao
+	  V2<-(30000+500*Carros.Qopcionais)*(1+carros.ano/1000)
+	  Escreval("O valor é: R$", V2)
+    Senao
+      se Carros.Modelo = "Picape" entao
+	    V3<-(50000+175*Carros.Qopcionais)*Carros.ano/2017
+	    Escreval("O valor é: R$", V3)
+      senao
+        Se Carros.Modelo = "Esportivo" entao
+		  V4<-(50000+1000*Carros.Qopcionais)*(1.5+Carros.ano/2017)
+		  Escreval("O valor é: R$", V4)
+        senao
+          Se Carros.Modelo = "Conversível" entao
+		    V5<-(50000+1000*Carros.Qopcionais)*(1.5+Carros.ano/2017) 
+		    Escreval("O valor é : R$", V5)
+		  Senao
+            Escreval("Modelo digitado incorretamente")		  
+		  Fim_se
+		Fim_se
+      Fim_se
+    Fim_se
+  Fim_se
+  
+  Escreval("Deseja escolher outro modelo?")
+  Escreval("Digite 1 para sim e 2 para nao")
+    Leia(Continuar)
+	
+ Fim_Enquanto	
+Fim  

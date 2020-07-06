@@ -1,0 +1,14 @@
+
+algoritmo SomadeMatriz
+ var mat: Vetor[1..3, 1..3] de inteiro // declaro que a matriz vai ser bidimensional e com  3 espaços em cada dimensão
+  i, j, soma: inteiro  // atribuir índices pra cada uma, que podem ser usados como contadores 
+início
+ soma<-0 
+ Para i de 1 a 3 passo 1 faça  // Esse for é usado para contar os numeros de linhas 
+  Para j de 1 a 3 passo 1 faça // esse for é pra contar o numero de colunas, ou seja quando é contado 1 a linha 1 será analisa e todos as 3 colunas [1,1],[1,2],[1,3]
+   Soma<-Soma+mat[i,j] // e será acumulado as somas nessa variavel a cada contagem
+  Fim_para // depois daqui se inicia outra contagem de linha
+ Fim_para 
+ Escreval("A soma é : ", Soma)
+Fim  
+

@@ -1,0 +1,12 @@
+algoritmo Vetr
+Var 
+ X , P : integer
+ Vet: Vetor [1..5] de inteiro
+Inicio
+ Para P de 1 até 5 faca
+  Se Vet[P] = X então
+   Escreval(P)
+  Fim_se  
+ Fim_para
+Escreval("Não encontrado") 
+Fim

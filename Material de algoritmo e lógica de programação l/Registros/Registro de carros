@@ -1,0 +1,25 @@
+Algoritmo ExercicioR1
+ Tipo
+   Carro = Registro
+   Marca: Vetor[1..15] de caractere
+   Modelo: Vetor[1..20] de caractere
+   Placa: Vetor[1..20] de caractere
+ Fim_registro
+Var
+  Automovel: Vetor[0..9] de Carro
+  i:inteiro
+Inicio
+  Para i de 1 até 10 passo 1 faca
+    Escreval("Digite a marca do carro")
+      Leia(Automovel[i].Marca)
+    Escreval("Digite o modelo")
+      Leia(Automovel[i].Modelo)
+    Escreval("Digite o numero da placa")
+      Leia(Automovel[i].Placa)
+  Fim_para	 
+i<- 0  
+ Para i de 0 ate 9 passo 1 faca 	
+  Escreval("A marca do carro ",i," é: ",Automovel[i].Marca," , o modelo é: ", Automovel[i].Modelo," e a placa é: ", Automovel[i].Placa )
+ Fim_para 
+Leia()  
+Fim  
